@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+/* ── Theme ── */
+@theme {
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular,
+    monospace;
+}
+
+/* ── Base ── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #050505;
+}
+
+::selection {
+  background: rgba(126, 186, 228, 0.3);
+  color: #f8fafc;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(126, 186, 228, 0.2) #0a0a0f;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(126, 186, 228, 0.2);
+  border-radius: 4px;
+}
+
+/* ── Reusable card / label ── */
+.card {
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(126, 186, 228, 0.2);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  position: relative;
+  transition: border-color 0.5s, box-shadow 0.5s;
+}
+.card:hover {
+  border-color: rgba(126, 186, 228, 0.5);
+  box-shadow: 0 0 24px rgba(126, 186, 228, 0.1);
+}
+
+.label {
+  display: block;
+  font-size: 0.75rem;
+  color: #8b949e;
+}
+
+/* ── Animated grid background ── */
+.grid-bg {
+  background-image: linear-gradient(
+      rgba(126, 186, 228, 0.15) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(126, 186, 228, 0.15) 1px, transparent 1px);
+  background-size: 44px 44px;
+  animation: grid-drift 30s linear infinite;
+}
+
+@keyframes grid-drift {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(44px, 44px);
+  }
+}
+
+/* ── Glitch effect on hero title ── */
+.glitch-text {
+  position: relative;
+  display: inline-block;
+}
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+.glitch-text::before {
+  color: #00f0ff;
+  clip-path: polygon(0 0, 100% 0, 100% 42%, 0 42%);
+  animation: glitch-a 6s infinite linear;
+}
+.glitch-text::after {
+  color: #7ebae4;
+  clip-path: polygon(0 58%, 100% 58%, 100% 100%, 0 100%);
+  animation: glitch-b 6s infinite linear;
+}
+
+@keyframes glitch-a {
+  0%,
+  91% {
+    opacity: 0;
+    transform: translate(0);
+  }
+  92% {
+    opacity: 0.75;
+    transform: translate(3px, -2px);
+  }
+  93% {
+    opacity: 0;
+    transform: translate(0);
+  }
+  94% {
+    opacity: 0.6;
+    transform: translate(-2px, 1px);
+  }
+  95%,
+  100% {
+    opacity: 0;
+    transform: translate(0);
+  }
+}
+@keyframes glitch-b {
+  0%,
+  93% {
+    opacity: 0;
+    transform: translate(0);
+  }
+  94% {
+    opacity: 0.65;
+    transform: translate(-3px, 2px);
+  }
+  95% {
+    opacity: 0;
+    transform: translate(0);
+  }
+  96% {
+    opacity: 0.5;
+    transform: translate(2px, -1px);
+  }
+  97%,
+  100% {
+    opacity: 0;
+    transform: translate(0);
+  }
+}
+
+/* ── Tech-stack marquee ── */
+.marquee-mask {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 6%,
+    black 94%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 6%,
+    black 94%,
+    transparent
+  );
+}
+
+.marquee-track {
+  animation: marquee-scroll 22s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
