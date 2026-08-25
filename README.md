@@ -1,5 +1,6 @@
 # Personal Student-Hub
 Project ini merupakan penugasan/demo pembuatan website personal profile/portfolio interaktif bertema cyberpunk/terminal dengan stack React, Vite, dan Tailwind CSS.
+Hasil project bisa dilihat pada https://okaajelantik.github.io/student-hub/ atau klik [disini]{https://okaajelantik.github.io/student-hub/}
 
 ---
 
