@@ -68,6 +68,7 @@ Adapun runtutan proses prompting dalam project ini dilakukan sebagai berikut:
     <details>
     <summary> Lihat CLAUDE.md </summary>
     ```markdown
+
     Bertindaklah sebagai Creative Frontend Engineer. Buat "Web Student Hub Personal" menggunakan React, Vite. Gunakan Tailwind CSS untuk styling dan Framer Motion untuk menangani animasi scroll dan interaksi. Prioritaskan hasil visual yang futuristik dan memukau, namun jaga struktur komponen tetap rapi dan seefisien mungkin.
 
     # DESIGN SYSTEM: ELEGANT FUTURISTIC TUI
@@ -108,6 +109,7 @@ Adapun runtutan proses prompting dalam project ini dilakukan sebagai berikut:
         Buat footer bergaya terminal dengan judul > PING_ME.
         Tampilkan teks koneksi ala command line: echo "hello" > okajelantikstdy@gmail.com dan ssh git@github.com:OkaaJelantik.
         Tambahkan ornamen teks di pojok kanan bawah: System Uptime: 99.9% | Status: Online.
+    
     ```
     </details>
 
