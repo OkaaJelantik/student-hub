@@ -82,7 +82,7 @@ Adapun runtutan proses prompting dalam project ini dilakukan sebagai berikut:
 
     # KONTEN & STRUKTUR KOMPONEN
     Tulis seluruh kodenya langsung di file src/App.jsx (Single-File Component)
-    Wajib memiliki 6 komponen berikut secara berurutan menggunakan tag HTML semantik ('<header>, <main>, <section>, <footer>'):
+    Wajib memiliki 6 komponen berikut secara berurutan menggunakan tag HTML semantik ('<header>', '<main>', '<section>', '<footer>'):
     1. Header & Navbar:
         Tampilkan Nama: I Made Oka Jelantik | NIM: 2505551101.
         Menu Utama: [ Bidang IoT dan Jaringan ]
