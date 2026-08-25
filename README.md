@@ -68,9 +68,7 @@ Adapun runtutan proses prompting dalam project ini dilakukan sebagai berikut:
     <details>
     <summary> Lihat CLAUDE.md </summary>
     ```markdown
-
     Bertindaklah sebagai Creative Frontend Engineer. Buat "Web Student Hub Personal" menggunakan React, Vite. Gunakan Tailwind CSS untuk styling dan Framer Motion untuk menangani animasi scroll dan interaksi. Prioritaskan hasil visual yang futuristik dan memukau, namun jaga struktur komponen tetap rapi dan seefisien mungkin.
-
     # DESIGN SYSTEM: ELEGANT FUTURISTIC TUI
     - Color Palette: Tema dark mode modern. Background sangat gelap (#050505 atau #09090b), teks utama crisp white (#f8fafc), teks sekunder abu-abu redup (#8b949e), dan warna aksen cyan/NixOS Blue (#7ebae4 atau #00f0ff) untuk efek glow dan elemen interaktif.
     - Typography: Wajib menggunakan font monospace modern (seperti JetBrains Mono, Fira Code, atau font-mono bawaan Tailwind) untuk seluruh teks. Atur line-height minimal 1.6.
@@ -79,7 +77,6 @@ Adapun runtutan proses prompting dalam project ini dilakukan sebagai berikut:
     2. Letakkan ornamen ASCII (seperti +, //, atau └ ┐) di sudut-sudut section atau layar secara absolut.
     3. Tambahkan efek CSS glitch yang sangat halus pada teks judul utama (Hero) secara periodik atau saat elemen di-hover.
     - Animasi Utama: Gunakan Framer Motion untuk animasi "nyembul" perlahan saat elemen di-scroll (efek fade-in meluncur dari bawah). Boleh gunakan glassmorphism tipis dan efek glow pada border saat card di-hover.
-
     # KONTEN & STRUKTUR KOMPONEN
     Tulis seluruh kodenya langsung di file src/App.jsx (Single-File Component)
     Wajib memiliki 6 komponen berikut secara berurutan menggunakan tag HTML semantik:  
@@ -109,8 +106,8 @@ Adapun runtutan proses prompting dalam project ini dilakukan sebagai berikut:
         Buat footer bergaya terminal dengan judul > PING_ME.
         Tampilkan teks koneksi ala command line: echo "hello" > okajelantikstdy@gmail.com dan ssh git@github.com:OkaaJelantik.
         Tambahkan ornamen teks di pojok kanan bawah: System Uptime: 99.9% | Status: Online.
-    
     ```
+
     </details>
 
 ---
