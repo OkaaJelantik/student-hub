@@ -61,7 +61,7 @@ Adapun runtutan proses prompting dalam project ini dilakukan sebagai berikut:
     > • Showcase 3 Card Project: 3 Card ide proyek impian selama kuliah.
     > Yang perlu kamu lakukan adalah memberi pertanyaan untuk tiap keperluan pemenuhan tugas tersebut. Untuk relevansi, aku melampirkan buku kurikulum dari kampusku
     Dari informasi dasar ini, prompting terus dilakukan hingga penentuan UI. Hal ini membantu memastikan hasil yang akan didapat lebih predictable dan sesuai persona yang dibentuk dari awal.
-    Log lebih lengkap dapat dilihat di [sini]{https://share.gemini.google/hcn8H78ySAbl}
+    Log lebih lengkap dapat dilihat di [sini](https://share.gemini.google/hcn8H78ySAbl)
 3. Pemberian context file ke Agent Coding (Antigravity)
     Karena akan menggunakan model Claude, maka context file disimpan dalam file "CLAUDE.md" (penamaan hanya untuk tujuan semantik).
     Isi dari context file:
