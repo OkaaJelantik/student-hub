@@ -67,7 +67,7 @@ Adapun runtutan proses prompting dalam project ini dilakukan sebagai berikut:
     Isi dari context file:
     <details>
     <summary> Lihat CLAUDE.md </summary>
-    ``` markdown
+    ```markdown
     Bertindaklah sebagai Creative Frontend Engineer. Buat "Web Student Hub Personal" menggunakan React, Vite. Gunakan Tailwind CSS untuk styling dan Framer Motion untuk menangani animasi scroll dan interaksi. Prioritaskan hasil visual yang futuristik dan memukau, namun jaga struktur komponen tetap rapi dan seefisien mungkin.
 
     # DESIGN SYSTEM: ELEGANT FUTURISTIC TUI
